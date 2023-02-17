@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@main
+        uses: MiguelLedesmaC/Translator@main
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           SECRET_KEY_TRANSLATOR: ${{secrets.SECRET_KEY_TRANSLATOR}}
