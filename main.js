@@ -11,12 +11,12 @@ let outputTranslate = document.querySelector('#output__translate')
 
 //Conseguir la lista de lenguajes desde el servidor
 const GET__URL = 'https://text-translator2.p.rapidapi.com/getLanguages'
-const myKEY = process.env.KEY_TRANSLATOR;;
+const KEY = '';//Add your key here
 
 const OPTIONS = {
     method:'get',
     headers: {
-        'X-RapidAPI-Key': myKEY,
+        'X-RapidAPI-Key': KEY,
         'X-RapidAPI-Host': 'text-translator2.p.rapidapi.com'
     }
 }
@@ -77,7 +77,7 @@ const OPTIONS = {
 	method: 'POST',
 	headers: {
 		'content-type': 'application/x-www-form-urlencoded',
-		'X-RapidAPI-Key': myKEY,
+		'X-RapidAPI-Key': KEY,
 		'X-RapidAPI-Host': 'text-translator2.p.rapidapi.com'
 	},
 	body: encodedParams
