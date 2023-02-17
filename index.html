@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xcorp Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/XcorpLogo.png">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Xcorp Translator</h1>
+        <div class="languages-container">
+            <div class="text-for-translate">
+                <label for="translate__from">Idioma a Traducir: </label>
+                        <select  id="translate__from">
+                            <option value="">Español</option>
+                        </select>
+            </div>
+
+                <div class="text-translated">
+                    <label for="translate__to">Idioma Traducido</label>
+                        <select  id="translate__to">
+                            <option value="">Aleman</option>
+                        </select>
+                </div>
+        </div>
+        
+        <div class="result-container">
+            <div class="text-to-translate">
+                <label for="input__translate"></label>
+                <textarea  placeholder="Escribe algo" id="input__translate" cols="19" rows="3"></textarea>
+            </div>
+            
+            <div class="text-translated">
+                <label for="output__translate"></label>
+                <textarea  placeholder="Texto Traducido" id="output__translate" cols="19" rows="3"></textarea>
+            </div>
+        </div>
+        <button class="btn" >Traducir</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 375px;
+    margin: 55px auto;
+    border: 1px solid;
+    background-color: #002D62;
+}
+.header {
+    text-align:center;
+    color: #da52da;
+    font-family: 'Lobster', cursive;
+    text-shadow: 3px 3px 6px  rgb(90, 6, 201);
+
+}
+.languages-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 1.4em;
+    background: -webkit-linear-gradient(rgb(223, 220, 214), rgb(90, 6, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#translate__from,
+#translate__to {
+    color: rgba(90, 6, 201, 0.705);
+    border-radius: 8px;
+    border: 2px solid #da52da;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+    background-color: #f79bf7;
+    font-weight: 500;
+}
+#translate__from::-webkit-scrollbar,
+#translate__to::-webkit-scrollbar{
+    border: 2px solid #da52da;
+}
+#translate__from::-webkit-scrollbar-thumb,
+#translate__to::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid #da52da;
+    background-color: #f79bf7;
+}
+.text-for-translate,
+.text-translated {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 75px;
+}
+#input__translate,
+#output__translate{
+    border: 2px solid rgb(90, 6, 201);
+    border-radius: 10px;
+    color: #da52da;
+    font-weight: 600;
+    font-family: 'Lobster', cursive;
+    padding:5px 0 0 5px;
+    margin-bottom: 20px;
+    background-color: #f79bf7;
+    cursor: pointer;
+}
+#output__translate{
+    margin-top: -10px;
+}
+#input__translate::placeholder,
+#output__translate::placeholder {
+    font-size: .8em;
+    color: rgb(90, 6, 201);
+    opacity: .6;   
+}
+.btn {
+    margin: 0 auto;
+    width: 190px;
+    height: 25px;
+    border: 2px solid #da52da;
+    background-color: rgb(90, 6, 201);
+    color: #da52da;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
