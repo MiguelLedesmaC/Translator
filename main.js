@@ -11,7 +11,7 @@ let outputTranslate = document.querySelector('#output__translate')
 
 //Conseguir la lista de lenguajes desde el servidor
 const GET__URL = 'https://text-translator2.p.rapidapi.com/getLanguages'
-const myKEY = KEY_TRANSLATOR;
+const myKEY = process.env.KEY_TRANSLATOR;;
 
 const OPTIONS = {
     method:'get',
