@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/first-interaction@v1
       with:
-        key_secret: ${{ secrets.SECRET_KEY_TRANSLATOR }}
+        myKEY : ${{ secrets.SECRET_KEY_TRANSLATOR }}
         issue-message: 'Message thah will be displayed on users first issue'
         pr-message: 'Message that willl be displayed on users first pull request ' 
