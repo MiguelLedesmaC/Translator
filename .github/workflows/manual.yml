@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Build and Deploy
-        uses: MiguelLedesmaC/Translator/main.js@main
+        uses: MiguelLedesmaC/Translator/blob/main/main.js@main
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           SECRET_KEY_TRANSLATOR: ${{secrets.SECRET_KEY_TRANSLATOR}}
